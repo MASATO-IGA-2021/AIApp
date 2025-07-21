@@ -4,7 +4,7 @@ on:
     inputs: # 入力パラメータ
       greeting: # メッセージ入力
         type: string # 入力タイプ
-        description: A cheerful word # 説明
+        description: 'A cheerful word' # 説明
         required: true # 必須入力
         default: 'Hello, World!' # デフォルト値
 jobs:
@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest # ランナー(実行環境)
     steps: # ステップ定義
       - run: echo "${{ github.event.inputs.greeting }}" # 入力メッセージを表示
-      
+
 
