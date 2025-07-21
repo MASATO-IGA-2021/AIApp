@@ -6,11 +6,11 @@ on:
         type: string # 入力タイプ
         description: A cheerful word # 説明
         required: true # 必須入力
-        default: 'Hello, World!' # デフォルト値 
+        default: 'Hello, World!' # デフォルト値
 jobs:
   runs:
     runs-on: ubuntu-latest # ランナー(実行環境)
     steps: # ステップ定義
       - run: echo "${{ github.event.inputs.greeting }}" # 入力メッセージを表示
-
       
+
