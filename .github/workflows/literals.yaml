@@ -4,7 +4,7 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: printenv | grep 'Literal_'
+      - run: printenv | grep 'Literal_' | true
         env: 
           LITERAL_NULL: ${{ null }}
           LITERAL_BOOLEAN: ${{ true }}
