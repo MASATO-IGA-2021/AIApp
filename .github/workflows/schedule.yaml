@@ -6,4 +6,5 @@ jobs:
   runs:
     runs-on: ubuntu-latest # ランナー(実行環境)
     steps: # ステップ定義
-      - run: echo "Scheduled workflow running at $(date)" # 現在日時を表示
+      - run: date # 現在日時を表示
+
