@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest # ランナー(実行環境)
     steps: # ステップ定義
       - run: echo "${{ github.event.inputs.greeting }}" # 入力メッセージを表示
+      - uses: actions/checkout@v4 # アクションの呼び出し
 
 
