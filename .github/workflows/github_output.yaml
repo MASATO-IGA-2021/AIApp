@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: source
-      run: echo "message=Hello" >> $GITHUB_OUTPUT
+      run: echo "message=Hello" >> "$GITHUB_OUTPUT"
     - env: 
         result: ${{ steps.source.outputs.message }}
       run: echo "${{ result }}"
